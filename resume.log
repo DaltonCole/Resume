@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 SEP 2016 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 SEP 2016 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -427,15 +427,15 @@ LaTeX Font Info:    ... okay on input line 21.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=542.02501pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -453,43 +453,33 @@ LaTeX Font Info:    ... okay on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (22.18663pt too wide) in paragraph at lines 27--27
-[] \OT1/cmr/m/n/10 http://www.linkedin.com/in/daltoncole1 
- []
-
-
-Overfull \hbox (1.90433pt too wide) in paragraph at lines 38--38
+Overfull \hbox (1.90433pt too wide) in paragraph at lines 42--42
 []\OT1/cmr/m/n/10 Education| 
  []
 
 
-Overfull \hbox (5.26541pt too wide) in paragraph at lines 45--45
+Overfull \hbox (5.26541pt too wide) in paragraph at lines 51--51
 []\OT1/cmr/m/n/10 Experience| 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
 
-Overfull \hbox (1.23764pt too wide) in paragraph at lines 80--80
+Overfull \hbox (1.23764pt too wide) in paragraph at lines 101--101
 []\OT1/cmr/m/n/10 Computer| 
- []
-
-
-Overfull \hbox (1.14714pt too wide) in paragraph at lines 79--85
-[][] 
  []
 
 [1
@@ -499,7 +489,7 @@ Overfull \hbox (1.14714pt too wide) in paragraph at lines 79--85
 Here is how much of TeX's memory you used:
  1585 strings out of 493014
  19090 string characters out of 6133351
- 187259 words of memory out of 5000000
+ 190255 words of memory out of 5000000
  5147 multiletter control sequences out of 15000+600000
  5647 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -508,7 +498,7 @@ Here is how much of TeX's memory you used:
 onts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on resume.pdf (2 pages, 51940 bytes).
+Output written on resume.pdf (2 pages, 54286 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  15 compressed objects within 1 object stream

@@ -4,7 +4,7 @@
 \usepackage{amssymb}
 
 % Set 1 inch margins
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=.5in]{geometry}
 
 % Left, Center, and Right align one line
 \usepackage{lipsum}
@@ -33,21 +33,26 @@
 \noindent\makebox[\linewidth]{\rule{\textwidth}{.4pt}} 
 
 % Three columsn: left, left, right aligned
-\begin{tabular}{p{1.5cm} p{10.95cm} r}
+% \begin{tabular}{p{1.5cm} p{10.95cm} r} Used with 1 inch margins
+\begin{tabular}{p{1.5cm} p{12.9cm} r}
 Objective  	& To obtain an internship for the summer of 2017 in Cybersecurity 	& 						\\ \\
+\end{tabular}
 
+\begin{tabular}{p{1.5cm} p{12.9cm} r}
 Education  	& Missouri University of Science and Technology 					& May 2019 				\\
 			& \textbf{Ph.D. Computer Science} 									& 						\\ \\
 
 		  	& Missouri University of Science and Technology 					& May 2016 				\\
 			& \textbf{B.S. Computer Science} 									& \textbf{GPA: 3.8/4.0} \\
 			& \textbf{Minor: Computer Engineering \& Mathematics} 										\\ \\
+\end{tabular}
 
+\begin{tabular}{p{1.5cm} p{12.9cm} r}
 Experience  & Cerner 															& Kansas City, MO 		\\
 			& \textbf{Software Engineering Intern} 								& Summer 2016			\\
-			& \tabitem test1 													& 						\\
-			& \tabitem test2 													& 						\\
-			& \tabitem test3 													& 						\\ \\
+			& \tabitem Created a Ruby On Rails web application 					& 						\\
+			& \tabitem Added security features to the web application			& 						\\
+			& \tabitem Gave live demos weekly 									& 						\\ \\
 
 			& Sandia National Laboratories										& Albuquerque, NM 		\\
 			& \textbf{Cybersecurity Training} 									& January 2016 			\\
@@ -57,17 +62,15 @@ Experience  & Cerner 															& Kansas City, MO 		\\
 
 			& Missouri University of Science and Technology						& Rolla, MO 			\\
 			& \textbf{Introduction to Artificial Intelligence} 					& Sprint 2016 			\\
-			& \tabitem test1 													& 						\\
-			& \tabitem test2 													& 						\\
-			& \tabitem test3 													& 						\\
+			& \tabitem Created a chess AI that used	 Time-Limited ID-DFS MiniMax with alpha-beta pruning and Quiescence Search	& \\
+			& \tabitem Implemented different searching techniques such as BFS, ID-DFS, and A* 	& 		\\
 
 			& \textbf{Object-Oriented Numerical Modeling I} 					& Sprint 2016 			\\
-			& \tabitem test1 													& 						\\
-			& \tabitem test2 													& 						\\
-			& \tabitem test3 													& 						\\
+			& \tabitem Create abstract data types to represent the basic building blocks in mathematics & \\
+			& \tabitem Optimized C++ code 										& 						\\
 
 			& \textbf{Computer Networking} 										& Fall 2015 			\\
-			& \tabitem Created a peer to peer file sharing program for Unix based systems 		& 						\\
+			& \tabitem Created a peer to peer file sharing program for Unix based systems 		& 		\\
 			& \tabitem Learned python networking 								& 						\\
 			& \tabitem Implemented networking protocols 						& 						\\
 
@@ -75,26 +78,47 @@ Experience  & Cerner 															& Kansas City, MO 		\\
 			& \tabitem Created a matrices application in Xcode for the iPhone 	& 						\\
 			& \tabitem Organized weekly meetings with group members 			& 						\\
 			& \tabitem Learned Swift programming 								& 						\\ \\
+
+			& Winnetonka High School											& Kansas City, MO 		\\
+			& \textbf{Technology Department Intern} 							& Aug 2012 - May 2013 	\\
+			& \tabitem Installed software on various operating systems 			& 						\\
+			& \tabitem Assisted students and teachers with a variety of technological issues	& 		\\ \\
+
+			& Burger King														& Kansas City, MO 		\\
+			& \textbf{Chef} 													& Summer 2013		 	\\
+			& \tabitem Handled currency and credit transactions quickly and accuretly 			& 		\\
+			& \tabitem Resolved complains promptly and professionally			& 						\\
+			& \tabitem Followed procedures for safe food preparation, assembly, and presentation	& 	\\ \\
+
+			& Worlds of Fun											& Kansas City, MO 					\\
+			& \textbf{Rides Ambassador} 							& Apr 2011 - Sept 2012 				\\
+			& \tabitem Worked with other employees in developing team work and cooperation 	& 			\\
+			& \tabitem Insured customer safety through constant inspecition of the ride and of customers & \\ \\
+
 \end{tabular}
 
 \begin{tabular}{p{1.5cm} l l l l l l l}
-Computer	& Advanced: 	& C++ 		& Python 	& 			& 			& 			& 					\\
-Skills		& Proficient:	& Swift 	& SQL 		& Linux 	& Windows 	& Mac OS X 	& MATLAB 			\\
+Computer	& Advanced: 	& C++ 		& Python 	& Ruby		& 			& 			& 					\\
+Skills		& Proficient:	& Swift 	& SQL 		& Linux 	& Windows 	& Mac OS X 	& Ruby on Rails  	\\
 			&				& QuartusII & Multisim 	& PuTTY 	& Assembly 	& MIPS 		& Microcontrollers  \\
-			& Learning:		& Java 		& GO 		& JavaScript & 			& 			&\\
+			& 				& MATLAB	& Javascript& CoffeScript& LaTeX	& Wireshark	& Nmap				\\
+			& Learning:		& Java 		& GO 		& 			 & 			& 			& 					\\
 \end{tabular}
 
 \begin{tabular}{p{1.5cm} l}
-Honors \&	& Scholarship For Service Recipient 														\\
-Activities	& Association for Computer Machinery 														\\
-			& Cyber Defense Team 																		\\
-			& Associated Students of the University of Missouri 										\\
-			& Collegiate Eagle Scout Association 														\\
-			& Downtown Hall Association 																\\
-			& History Club 																				\\
-			& Residential Hall Association 																\\
-			& Thomas Jefferson Hall Association 														\\
-			& Institue of Electrical and Electronics Engineers 											\\
+Honors \&	& Scholarship For Service Recipient 																		\\
+Activities	& Association for Computer Machinery - \textbf{President}(2015-16), \textbf{Secretary}(2014-15, 2016-17)	\\
+			& Computer Science Department Leadership Award - 2016														\\
+			& Cyber Defense Team - Member(2015-16) 																		\\
+			& Downtown Hall Association - \textbf{Vice President}(Spring 2015)											\\
+			& Institue of Electrical and Electronics Engineers - Member(Spring 2015)									\\
+			& Associated Students of the University of Missouri - \textbf{Programing Coordinator}(2014-15)				\\
+			& History Club - \textbf{Vice President}(2014-15) 															\\
+			& Residential Hall Association - Member(2014-15) 															\\
+			& Collegiate Eagle Scout Association - \textbf{Vice President}(2014) 										\\
+			& Thomas Jefferson Hall Association - Member(2013-14) 														\\
+			& President's Volunteer Service Award - 2013																\\
+			& Assisteens - \textbf{President}(2012-13), \textbf{Vice President}(2011-12)								\\
 \end{tabular}
 
 
