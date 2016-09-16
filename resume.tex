@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+
+% Set 1 inch margins
+\usepackage[margin=1in]{geometry}
+
+% Left, Center, and Right align one line
+\usepackage{lipsum}
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+
+% No indentation
+\setlength\parindent{0pt}
+
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\begin{document}
+
+% No Page Numbering
+\pagenumbering{gobble}
+
+% Left Center Right align
+\noindent\textbox{\hfill}\textbox{\hfil \textbf{Dalton Cole}\hfil}\textbox{\hfill} \\
+\noindent\textbox{\underline{School Address}\hfill}\textbox{\hfil http://www.linkedin.com/in/daltoncole1\hfil}\textbox{\hfill \underline{Home Address}} \\
+\noindent\textbox{1303 Woodlawn Drive\hfill}\textbox{\hfil http://github.com/drc14\hfil}\textbox{\hfill 51 The Woodlands} \\
+\noindent\textbox{Rolla, MO 65401\hfill}\textbox{\hfil \hfil}\textbox{\hfill Gladstone, MO 64119} \\
+\noindent\textbox{drcgy5@mst.edu\hfill}\textbox{\hfil \hfil}\textbox{\hfill (660)383-2144} \\
+% Make a verticle line
+\noindent\makebox[\linewidth]{\rule{\textwidth}{.4pt}} 
+
+% Three columsn: left, left, right aligned
+\begin{tabular}{p{1.5cm} p{10.95cm} r}
+Objective  	& To obtain an internship for the summer of 2017 in Cybersecurity 	& 						\\ \\
+
+Education  	& Missouri University of Science and Technology 					& May 2019 				\\
+			& \textbf{Ph.D. Computer Science} 									& 						\\ \\
+
+		  	& Missouri University of Science and Technology 					& May 2016 				\\
+			& \textbf{B.S. Computer Science} 									& \textbf{GPA: 3.8/4.0} \\
+			& \textbf{Minor: Computer Engineering \& Mathematics} 										\\ \\
+
+Experience  & Cerner 															& Kansas City, MO 		\\
+			& \textbf{Software Engineering Intern} 								& Summer 2016			\\
+			& \tabitem test1 													& 						\\
+			& \tabitem test2 													& 						\\
+			& \tabitem test3 													& 						\\ \\
+
+			& Sandia National Laboratories										& Albuquerque, NM 		\\
+			& \textbf{Cybersecurity Training} 									& January 2016 			\\
+			& \tabitem Gained in-depth knowledge of the ISO model 				& 						\\
+			& \tabitem Learned the tools needed to reverse engineer malware 	& 						\\
+			& \tabitem Used nmap to map out networks 							& 						\\ \\
+
+			& Missouri University of Science and Technology						& Rolla, MO 			\\
+			& \textbf{Introduction to Artificial Intelligence} 					& Sprint 2016 			\\
+			& \tabitem test1 													& 						\\
+			& \tabitem test2 													& 						\\
+			& \tabitem test3 													& 						\\
+
+			& \textbf{Object-Oriented Numerical Modeling I} 					& Sprint 2016 			\\
+			& \tabitem test1 													& 						\\
+			& \tabitem test2 													& 						\\
+			& \tabitem test3 													& 						\\
+
+			& \textbf{Computer Networking} 										& Fall 2015 			\\
+			& \tabitem Created a peer to peer file sharing program for Unix based systems 		& 						\\
+			& \tabitem Learned python networking 								& 						\\
+			& \tabitem Implemented networking protocols 						& 						\\
+
+			& \textbf{Software Engineering} 									& Spring 2015 			\\
+			& \tabitem Created a matrices application in Xcode for the iPhone 	& 						\\
+			& \tabitem Organized weekly meetings with group members 			& 						\\
+			& \tabitem Learned Swift programming 								& 						\\ \\
+\end{tabular}
+
+\begin{tabular}{p{1.5cm} l l l l l l l}
+Computer	& Advanced: 	& C++ 		& Python 	& 			& 			& 			& 					\\
+Skills		& Proficient:	& Swift 	& SQL 		& Linux 	& Windows 	& Mac OS X 	& MATLAB 			\\
+			&				& QuartusII & Multisim 	& PuTTY 	& Assembly 	& MIPS 		& Microcontrollers  \\
+			& Learning:		& Java 		& GO 		& JavaScript & 			& 			&\\
+\end{tabular}
+
+\begin{tabular}{p{1.5cm} l}
+Honors \&	& Scholarship For Service Recipient 														\\
+Activities	& Association for Computer Machinery 														\\
+			& Cyber Defense Team 																		\\
+			& Associated Students of the University of Missouri 										\\
+			& Collegiate Eagle Scout Association 														\\
+			& Downtown Hall Association 																\\
+			& History Club 																				\\
+			& Residential Hall Association 																\\
+			& Thomas Jefferson Hall Association 														\\
+			& Institue of Electrical and Electronics Engineers 											\\
+\end{tabular}
+
+
+\end{document}
