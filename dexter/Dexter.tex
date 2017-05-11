@@ -1,0 +1,89 @@
+\documentclass[12pt, arial]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath, scalerel}
+
+% Make dot
+\DeclareMathOperator*{\Bigcdot}{\scalerel*{\cdot}{\bigodot}}
+
+
+% Set 1 inch margins
+\usepackage[margin=.5in]{geometry}
+
+% Left, Center, and Right align one line
+\usepackage{lipsum}
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+
+% No indentation
+\setlength\parindent{0pt}
+
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\begin{document}
+
+% No Page Numbering
+\pagenumbering{gobble}
+
+\centerline{\textbf{Ruisdael Dexter Acsenvil}}
+\centerline{ dacsenvil@gmail.com    $\bullet$    9208 NW 60$^{th}$ St, Parkville, MO 64152    $\bullet$    (816)560-6185}
+
+% Three columsn: left, left, right aligned
+% \begin{tabular}{p{1.5cm} p{10.95cm} r} Used with 1 inch margins
+\begin{tabular}{p{1.9cm} p{12.9cm} r}
+\\
+Objective  	& To obtain a position in Network Administration 					& 						\\ \\
+\end{tabular}
+
+\begin{tabular}{p{1.9cm} p{12.9cm} l}
+Education  	& Park University													& May 2017 				\\
+			& \textbf{B.S. Information Computer Science: Networking and Security} & \textbf{GPA: 3.7/4.0} \\
+			& \textbf{B.S. Information Computer Science: Computer Science} 		&						\\ \\
+\end{tabular}
+
+\begin{tabular}{p{1.9cm} p{12.9cm} l}
+Experience  & Cerner Corporation												& Kansas City, MO 		\\
+			& \textbf{Technical Apprentice} 									& May 2013 - Present	\\
+			& \tabitem Performed system maintenance, code upgrades, software implementations, and technical troubleshooting on Windows, Linux, AIX, and HPUX Systems & 				\\
+			& \tabitem Created documentation, work plans, and Wiki pages for client and associate use &	\\ 
+			& \tabitem Communicated with clients daily through phone, email, and instant messaging& 		\\
+			& \tabitem Coordinated and planed migrations, upgrades, and production improvements& 			\\
+			& \tabitem Completed service requests for clients 					&		 				\\
+			& \tabitem Mentored new associates									& 						\\
+
+
+			& \textbf{Cerner Scholar} 											& Aug 2012 - May 2013			\\
+			& \tabitem Performed basic troubleshooting on front-end and back-end systems 		& 			\\
+			& \tabitem Evaluated servers and generated reports for I/O, system uptime, and software installations & \\ \\
+
+			& McDonald's														& Kansas City, MO 		\\
+			& \textbf{Crew Trainer} 											& May 2013 - May 2014 	\\
+			& \tabitem Trained new employees, assigned daily tasks and jobs, and served customers	& 	\\ 
+			& \tabitem Maintained high standards of customer service during high-volume, fast-paced operations & 						\\
+			& \tabitem Handled currency and credit transactions quickly and accurately						&						\\ \\
+
+\end{tabular}
+
+\begin{tabular}{p{1.9cm} l l l l l l l}
+Computer	& Advanced: 	& Cisco Networking 		& Microsoft Office 	& PuTTY		& Windows	& 					& 	\\
+Skills		& 				& Windows Server 		& Linux				& 			& 			& 					& 	\\
+			& Proficient:	& HTML5 				& JavaScript 		& CSS 		& SQL 		& 	   				& 	\\
+			& 				& Java					& C++				& LISP 		& 			& 					& 	\\
+			& Learning:		& C\# 					& ASP.NET 			& 			& 			& 					& 	\\ \\
+\end{tabular}
+
+\begin{tabular}{p{1.9cm} l}
+Honors \&	& NAIA Academic All-Conference Student Athlete 						\\
+Activities	& NAIA Daktronics Scholar - Athlete Award							\\
+			& Dean's List 														\\
+			& Department Honors: Information Computer Science					\\ 
+			& Association of Computing Machinery 								\\
+			& Track \& Field Student-Athlete 									\\
+			& Kansas City Corporate Challenge 3 year participant and medalist 	\\
+\end{tabular}
+
+
+\end{document}
