@@ -18,6 +18,8 @@
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
+\usepackage{longtable} % Table to span multiple pages
+
 \begin{document}
 
 % No Page Numbering
@@ -31,7 +33,7 @@
 % Three columsn: left, left, right aligned
 % \begin{tabular}{p{1.5cm} p{10.95cm} r} Used with 1 inch margins
 \begin{tabular}{p{1.5cm} p{13.2cm} l}
-        Objective  	& To obtain a full time Software Engineering or Data Science position at Sandia National Laboratories with an emphasis in Machine Learning and Security   & \\ \\
+        Objective  	& To obtain a full-time Software Engineering or Data Science position at Sandia National Laboratories with an emphasis in Machine Learning and Security   & \\ \\
 \end{tabular}
 
 \begin{tabular}{p{1.5cm} p{13.2cm} l}
@@ -46,11 +48,27 @@ Education  	& University of Missouri - Columbia				 					& July 2021 				\\
 			& \textbf{Minor: Computer Engineering \& Mathematics} 										    \\ \\
 \end{tabular}
 
+
 \begin{tabular}{p{1.5cm} p{13.2cm} l}
-Experience  
-            & University of Missouri - Columbia                                 & Columbia, MO          \\
-            & \textbf{Graduate Teaching Assistant}                              & 2020                  \\
-            & \tabitem Graded assignments and exams for a junior level database course                  \\
+Research    & University of Missouri - Columbia                             & Columbia, MO          \\
+Experience  & \textbf{Graduate Researcher}                                  & Fall 2019 - Present   \\ 
+            & \tabitem Utilized PyTorch in evaluating deepfake detectors against a data poisoning attack \\
+            & \tabitem Developed a deep neural network in Keras and tensorflow to defend against a novel data poisoning attack on facial recognition \\
+            & \tabitem Used sklearn and matplotlib to perform statistical analysis on image datasets \\
+            & \tabitem Trained neural networks using amazon web services (AWS) &                   \\
+            & \tabitem Lead a team of three graduate students  \\
+\\
+            & Missouri University of Science and Technology                 & Rolla, MO             \\
+            & \textbf{Graduate Researcher}                                  & 2017 - 2019           \\
+            & \tabitem Used ANTLR to compare JavaScript grammar rule utilization between benign JavaScript and malware \\
+            & \tabitem Built a web crawler in Python using Scrapy to gather benign Javascript samples \\
+            & \tabitem Created an evolutionary algorithm to generate simple context-free grammars given samples from a language \\
+\end{tabular}
+
+\begin{longtable}{p{1.5cm} p{13.2cm} l}
+Work        & University of Missouri - Columbia                                 & Columbia, MO          \\
+Experience  & \textbf{Graduate Teaching Assistant}                              & 2020                  \\
+            & \tabitem Graded assignments and exams for a junior-level database course                  \\
             & \tabitem Provided academic support and instruction to students                            \\ \\
 
             & Missouri University of Science and Technology                     & Rolla, MO             \\
@@ -61,9 +79,9 @@ Experience
             
             & Sandia National Laboratories	& Albuquerque, NM 		\\
 			& \textbf{Cybersecurity Intern}										& May 2017 - Dec 2019 	\\
-			& \tabitem Created a Laika BOSS module to filter out metadata		&						\\
 			& \tabitem Applied machine learning to find correlations between source code and binary & 	\\
-			& \tabitem Created emulytics software using C for the 1553 data bus protocol 	&			\\
+			& \tabitem Wrote emulytics software using C for the 1553 data bus protocol 	&			\\
+			& \tabitem Created a Laika BOSS module to filter out metadata		&						\\
             & \tabitem Designed and implemented a graph labeling attack algorithm 	&     				\\
             & \tabitem Developed Python libraries in C++ for more efficient software 	& 				\\
             & \tabitem Analyzed network data using Bro and machine learning 			& 				\\
@@ -71,12 +89,48 @@ Experience
 			& \tabitem Employed Metasploit to break into Windows Machines		&	 					\\
 			& \tabitem Used IDA Pro to reverse engineer malware 				& 						\\
 			& \tabitem Mapped out network topography using nmap and Netmeld		&						\\ \\
-
+\pagebreak
 			& Cerner 															& Kansas City, MO 		\\
 			& \textbf{Software Engineering Intern} 								& Summer 2016			\\
 			& \tabitem Created a Ruby On Rails web application with added security features	& 			\\
-			& \tabitem Lead a team of interns in weekly live demos to management 				& 						\\ \\
+			& \tabitem Lead a team of interns in weekly live demos to management 			&    		\\
+            & \tabitem Won crowd favorite at intern hackathon                   &                       \\
+\end{longtable}
+
+\begin{tabular}{p{1.5cm} p{13.2cm} l}
+    Additional  & \textbf{Personal Website}                                     & July 2020 - Present \\
+    Experience  & \tabitem Implemented a personal website using Django             & \\
+                & \tabitem Managed a PostgreSQL database                        & \\
+                & \tabitem Extensively used Django templates to promote concise and rapid development & \\ 
+                & \tabitem Created a mobile-first responsive website design using bootstrap & \\
+                & \tabitem Containerized website deployment via Docker          & \\
+                & \tabitem Used TravisCI and Github Actions to automate unit testing and deployment & \\
+                & \tabitem Incorporated Google Search for quick and efficient website queries & \\
+
+                & \textbf{Programming Competitions}                             & Fall 2015 - 2019  \\
+                & \tabitem Won MS\&T's Programming Cup - Individual's Bracket            &           \\
+                & \tabitem Top 100 on open.kattis in the United States                   &           \\
+                & \tabitem ACM ICPC Regional's first place on-site                       &           \\
+
+                & \textbf{Compiler}                                             & Spring 2019 \\
+                & \tabitem Wrote a compiler for a pascal like language in C++     & \\
+                & \tabitem Used flex for lexical analysis and bison for tokenization                    & \\
+                & \tabitem Implemented intermediate language generation and instruction optimization    & \\
+
+                & \textbf{Raspberry Pi Cluster}                                 & Spring 2019 \\
+                & \tabitem Built a raspberry pi cluster consisting of 4 raspberry pis & \\
+                & \tabitem Used the slurm workload manager to manage distributed tasks & \\
+
+                & \textbf{Restaurant Recommender Website}                       & Spring 2017             \\
+                & \tabitem Created a restaurant recommendation system using collaborative based learning    &   \\
+                & \tabitem Built a website using ruby on rails to recommend restaurants to users            &   \\
+
+                & \textbf{AI}                                             & Spring 2016   \\
+                & \tabitem Programmed a chess AI using time-limited iterative deepening depth-first search minimax with alpha-beta pruning and quiescence search & \\
+                & \tabitem Achieved top 10 on riddles.io in connect four & \\ 
+\\
 \end{tabular}
+
 
 \begin{tabular}{p{1.5cm} l l l l l l l l}
 Computer	& Advanced: 	
@@ -84,8 +138,15 @@ Computer	& Advanced:
 Skills		& Proficient:	
             & Java 		& Ruby 		& \LaTeX 	& SQL 		& MATLAB   	& Javascript	& HTML  \\
 			&			 	
-            & Django 	& Linux 	& Tensorflow& Keras     & Sklearn	& Numpy	        & GANs  \\ \\
+            & Django 	& Linux 	& Tensorflow& Keras     & Sklearn	& Numpy	        & GANs  \\ \\ % TODO: Add more skills
 \end{tabular}
+
+
+\begin{tabular}{p{1.5cm} p{16.5cm}}
+    Publications    & \tabitem \textbf{D Cole}, S Newman, M Cutkosky, D Lin. \textit{In preparation}. Defending against targeted label flipping data poisoning attacks on deepfake detectors. \\
+                    & \tabitem \textbf{D Cole}, S Newman, D Lin. \textit{Submitted}. "A New Facial Authentication Pitfall and Remedy in Web Services" \\ \\
+\end{tabular}
+
 
 \begin{tabular}{p{1.5cm} l}
 Honors \&	& Scholarship For Service (SFS) Recipient 							\\
@@ -95,7 +156,7 @@ Activities	& Association for Computer Machinery - \textbf{President}, \textbf{Se
 			& Computer Science Department Leadership Award 						\\
 			& Downtown Hall Association - \textbf{Vice President}				\\
 			& Institute of Electrical and Electronics Engineers - Member		\\
-			& Associated Students of the University of Missouri - \textbf{Programing Coordinator} 		\\
+			& Associated Students of the University of Missouri - \textbf{Programming Coordinator} 		\\
 			& History Club - \textbf{Vice President} 							\\
 			& Collegiate Eagle Scout Association - \textbf{Vice President} 		\\
 			& President's Volunteer Service Award								\\
