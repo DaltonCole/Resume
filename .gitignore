@@ -2,3 +2,4 @@ resume.aux
 resume.dvi 
 resume.log
 .DS_Store
+*.out
