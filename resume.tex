@@ -3,6 +3,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb}
 
+% Hyperlink URLs
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+}
+
 % Set 1 inch margins
 \usepackage[margin=.5in]{geometry}
 
@@ -25,8 +31,8 @@
 % No Page Numbering
 \pagenumbering{gobble}
 %           Left                                            Center                                                  Right align
-\noindent   \textbox{(660)383-2144 \hfill}                                \textbox{\hfil \textbf{Dalton Cole}    \hfil} \textbox{\hfill https://github.com/DaltonCole} \\
-\noindent   \textbox{https://www.daltoncole.com \hfill}     \textbox{\hfil contact@daltoncole.com  \hfil}               \textbox{\hfill https://www.linkedin.com/in/daltoncole1}
+\noindent   \textbox{(660)383-2144 \hfill}                                \textbox{\hfil \textbf{Dalton Cole}    \hfil} \textbox{\hfill \url{https://github.com/DaltonCole}} \\
+\noindent   \textbox{\url{https://www.daltoncole.com} \hfill}     \textbox{\hfil contact@daltoncole.com  \hfil}               \textbox{\hfill \url{www.linkedin.com/in/daltoncole1}}
 % Make a vertical line
 \noindent\makebox[\linewidth]{\rule{\textwidth}{.4pt}} 
 
@@ -61,7 +67,7 @@ Experience  & \textbf{Graduate Researcher}                                  & Fa
             & Missouri University of Science and Technology                 & Rolla, MO             \\
             & \textbf{Graduate Researcher}                                  & 2017 - 2019           \\
             & \tabitem Used ANTLR, a parser generator tool, to compare JavaScript grammar rule utilization between benign JavaScript and malware \\
-            & \tabitem Built a web crawler in Python using Scrapy to gather benign Javascript samples \\
+            & \tabitem Built a web crawler in Python using Scrapy to gather benign JavaScript samples \\
             & \tabitem Created an evolutionary algorithm to generate simple context-free grammars given samples from a language \\
 \end{tabular}
 
@@ -93,6 +99,7 @@ Experience  & \textbf{Graduate Teaching Assistant}                              
 			& Cerner 															& Kansas City, MO 		\\
 			& \textbf{Software Engineering Intern} 								& Summer 2016			\\
 			& \tabitem Created a Ruby On Rails web application with added security features	& 			\\
+			& \tabitem Developed or used existing APIs for tools like Jenkins and Crucible	& 			\\
 			& \tabitem Led a team of interns in weekly live demos to management 			&    		\\
             & \tabitem Won crowd favorite at intern hackathon for uDate, an application that matched people based on self-reported medical data   &                       \\
 \end{longtable}
@@ -134,9 +141,9 @@ Experience  & \textbf{Graduate Teaching Assistant}                              
 
 \begin{tabular}{p{1.5cm} l l l l l l l l}
 Computer	& Advanced: 	& C++ 		& Python 	& 			& 			& 			& 				&       \\
-Skills		& Proficient:	& Java 		& Ruby 		& \LaTeX 	& SQL 		& MATLAB   	& Javascript	& HTML  \\
-			&			 	& Django 	& Linux 	& Tensorflow& Keras     & Sklearn	& Numpy	        & GANs  \\
-            &               & Metasploit& Nmap      & Wireshark &           &           &               &       \\
+Skills		& Proficient:	& Java 		& Ruby 		& \LaTeX 	& SQL 		& MATLAB   	& JavaScript	& HTML  \\
+			&			 	& Django 	& Linux 	& Tensorflow& Keras     & Sklearn	& Numpy	        & Matplotlib   \\
+            &               & Metasploit& Nmap      & Wireshark & Bash      &           &               &       \\
 \\
 \end{tabular}
 
