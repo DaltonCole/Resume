@@ -1,115 +1,111 @@
-\documentclass[10.5pt, arial]{article}
+% Build with: latexmk -pdf resume.tex
+\documentclass[10pt]{article}
 
-\usepackage[utf8]{inputenc}
-\usepackage{amssymb}
-
-% Hyperlink URLs
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=false,
-}
-
-% Set 1 inch margins
 \usepackage[margin=.5in]{geometry}
+\usepackage{longtable} % Lets the work history span pages
+\usepackage{hyperref}
 
-% Left, Center, and Right align one line
-\usepackage{lipsum}
-\newcommand\textbox[1]{%
-  \parbox{.333\textwidth}{#1}%
+\setlength{\parindent}{0pt}
+
+% One header line, with left, centered, and right-aligned text.
+\newcommand{\headercell}[1]{\parbox{.333\textwidth}{#1}}
+\newcommand{\headerline}[3]{%
+  \noindent\headercell{#1 \hfill} \headercell{\hfil #2 \hfil} \headercell{\hfill #3}%
 }
 
-% No indentation
-\setlength\parindent{0pt}
-
-\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+% A bullet inside a table cell.
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
-\usepackage{longtable} % Table to span multiple pages
+% Most sections: section name, details, and a right-hand date or place.
+\newenvironment{entries}{\begin{tabular}{p{1.5cm} p{13.2cm} l}}{\end{tabular}}
 
 \begin{document}
 
-% No Page Numbering
 \pagenumbering{gobble}
-%           Left                                            Center                                                  Right align
-\noindent   \textbox{ \hfill}                                \textbox{\hfil \textbf{Dalton Cole} (He/Him)    \hfil} \textbox{\hfill \url{https://github.com/DaltonCole}} \\
-\noindent   \textbox{\url{https://www.daltoncole.com} \hfill}     \textbox{\hfil contact@daltoncole.com  \hfil}               \textbox{\hfill \url{www.linkedin.com/in/daltoncole1}}
-% Make a vertical line
-\noindent\makebox[\linewidth]{\rule{\textwidth}{.4pt}} 
 
-% Three columns: left, left, right aligned
-% \begin{tabular}{p{1.5cm} p{10.95cm} r} Used with 1 inch margins
-%\begin{tabular}{p{1.5cm} l}
-%        Objective  	& To obtain a full-time Software Engineering position at Google \\ \\
-%\end{tabular}
+% ---- Header ----
 
-\begin{tabular}{p{1.5cm} p{13.2cm} l}
-Education  	& University of Missouri - Columbia				 					& July 2021 				\\
-			& \textbf{Ph.D. Computer Science} 									& 	\\
-			& Missouri University of Science and Technology 					& May 2019 				    \\
-			& \textbf{M.S. Computer Science}									& 	\\
-			& \textbf{B.S. Computer Science} 									&    \\
-			& \textbf{Minor: Computer Engineering \& Mathematics} 										    \\
-\end{tabular}
+\headerline{}{\textbf{Dalton Cole} (He/Him)}{\url{https://github.com/DaltonCole}} \\
+\headerline{\url{https://www.daltoncole.com}}{contact@daltoncole.com}{\url{www.linkedin.com/in/daltoncole1}}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{.4pt}}
+
+% ---- Education ----
+
+\begin{entries}
+Education & University of Missouri - Columbia & July 2021 \\
+          & \textbf{Ph.D. Computer Science} \\
+          & Missouri University of Science and Technology & May 2019 \\
+          & \textbf{M.S. Computer Science} \\
+          & \textbf{B.S. Computer Science} \\
+          & \textbf{Minor: Computer Engineering \& Mathematics} \\
+\end{entries}
+
+% ---- Work experience ----
 
 \begin{longtable}{p{1.5cm} p{13.2cm} l}
-Work        & Sandia National Laboratories	& Albuquerque, NM 		\\
-Experience	& \textbf{Senior Computer Scientist}										& July 2021 - Present 	\\
-            & \tabitem Supported the development and analysis of wide-view visual-based satellite remote sensing sensors \\
-            & \tabitem Designed a graph neural network architecture for event classification using PyTorch \\
-            & \tabitem Lead a team of engineers working on analyzing remote sensing data \\
-            & \tabitem Spearheaded a project converting image segmentation maps into realistic images \\ & \hspace{0.4cm} using a generative adversarial neural network \\
-            & \tabitem Proposed and received funding for machine learning and data science projects \\
-            & \tabitem Mentored Ph.D. and undergraduate interns in software development \\
-
-            & \textbf{Cybersecurity Intern}										& May 2017 - Dec 2019 	\\
-            & \tabitem Applied machine learning to find correlations between source code and binary & 	\\
-            & \tabitem Wrote emulytics software using C for the 1553 data bus protocol 	&			\\
-            & \tabitem Created a Laika BOSS module to filter out metadata		&						\\
-            & \tabitem Designed and implemented a graph labeling attack algorithm 	&     				\\
-            & \tabitem Developed Python libraries in C++ for more efficient software 	& 				\\
-            & \tabitem Analyzed network data using Bro and machine learning 			& 				\\ \\
-
-            & Missouri University of Science and Technology                     & Rolla, MO             \\
-            & \textbf{Graduate Teaching Assistant}                              & Fall 2019             \\
-            & \tabitem Instructed students on objected-oriented programming (C++)  &   \\
-            & \tabitem Prepared lesson plans that are both informative and engaging to students      &  \\
-            & \tabitem Enforced the high integrity standards outlined by the university             &   \\ \\
-            
-%\pagebreak
-			& Cerner 															& Kansas City, MO 		\\
-			& \textbf{Software Engineering Intern} 								& Summer 2016			\\
-			& \tabitem Created a Ruby On Rails web application with added security features	& 			\\
-			& \tabitem Developed or used existing APIs for tools like Jenkins and Crucible	& 			\\
-			& \tabitem Led a team of interns in weekly live demos to management 			&    		\\
-                & \tabitem Won crowd favorite at the intern hackathon   &                       
-\\
+Work       & Sandia National Laboratories & Albuquerque, NM \\
+Experience & \textbf{Senior Computer Scientist} & July 2021 - Present \\
+           & \tabitem Supported the development and analysis of wide-view visual-based satellite remote sensing sensors \\
+           & \tabitem Designed a graph neural network architecture for event classification using PyTorch \\
+           & \tabitem Lead a team of engineers working on analyzing remote sensing data \\
+           & \tabitem Spearheaded a project converting image segmentation maps into realistic images \\
+           & \hspace{0.4cm} using a generative adversarial neural network \\
+           & \tabitem Proposed and received funding for machine learning and data science projects \\
+           & \tabitem Mentored Ph.D. and undergraduate interns in software development \\
+%
+           & \textbf{Cybersecurity Intern} & May 2017 - Dec 2019 \\
+           & \tabitem Applied machine learning to find correlations between source code and binary \\
+           & \tabitem Wrote emulytics software using C for the 1553 data bus protocol \\
+           & \tabitem Created a Laika BOSS module to filter out metadata \\
+           & \tabitem Designed and implemented a graph labeling attack algorithm \\
+           & \tabitem Developed Python libraries in C++ for more efficient software \\
+           & \tabitem Analyzed network data using Bro and machine learning \\ \\
+%
+           & Missouri University of Science and Technology & Rolla, MO \\
+           & \textbf{Graduate Teaching Assistant} & Fall 2019 \\
+           & \tabitem Instructed students on objected-oriented programming (C++) \\
+           & \tabitem Prepared lesson plans that are both informative and engaging to students \\
+           & \tabitem Enforced the high integrity standards outlined by the university \\ \\
+%
+           & Cerner & Kansas City, MO \\
+           & \textbf{Software Engineering Intern} & Summer 2016 \\
+           & \tabitem Created a Ruby On Rails web application with added security features \\
+           & \tabitem Developed or used existing APIs for tools like Jenkins and Crucible \\
+           & \tabitem Led a team of interns in weekly live demos to management \\
+           & \tabitem Won crowd favorite at the intern hackathon \\
 \end{longtable}
 
-\begin{tabular}{p{1.5cm} p{13.2cm} l}
-    Additional  & \textbf{Personal Website}                                     & July 2020 - Present \\
-    Experience  & \tabitem Implemented a personal website using Django             & \\
-                & \tabitem Managed a PostgreSQL database                        & \\
-                & \tabitem Extensively used Django templates to promote concise and rapid development & \\ 
-                & \tabitem Created a mobile-first responsive website design using bootstrap & \\
-                & \tabitem Containerized website deployment via Docker          & \\
-                & \tabitem Used TravisCI and Github Actions to automate unit testing and deployment & \\
-                & \tabitem Incorporated Google Search for quick and efficient website queries & \\
+% ---- Additional experience ----
 
-                & \textbf{Programming Competitions}                             & Fall 2015 - 2019  \\
-                & \tabitem Won MS\&T's Programming Cup - Individual's Bracket            &           \\
-                & \tabitem ACM ICPC Regional's first place on-site                       &           \\
+\begin{entries}
+Additional & \textbf{Personal Website} & July 2020 - Present \\
+Experience & \tabitem Implemented a personal website using Django \\
+           & \tabitem Managed a PostgreSQL database \\
+           & \tabitem Extensively used Django templates to promote concise and rapid development \\
+           & \tabitem Created a mobile-first responsive website design using bootstrap \\
+           & \tabitem Containerized website deployment via Docker \\
+           & \tabitem Used TravisCI and Github Actions to automate unit testing and deployment \\
+           & \tabitem Incorporated Google Search for quick and efficient website queries \\
+%
+           & \textbf{Programming Competitions} & Fall 2015 - 2019 \\
+           & \tabitem Won MS\&T's Programming Cup - Individual's Bracket \\
+           & \tabitem ACM ICPC Regional's first place on-site \\
 \\
-\end{tabular}
+\end{entries}
+
+% ---- Publication ----
 
 \begin{tabular}{p{1.5cm} p{16.5cm}}
-    Publication    & \tabitem \textbf{D Cole}, S Newman, D Lin. \textit{"A New Facial Authentication Pitfall and Remedy in Web Services".} IEEE Transactions on Dependable and Secure Computing, vol. 19, no. 4, pp. 2635-2647, 1 July-Aug. 2022 \\ \\
+Publication & \tabitem \textbf{D Cole}, S Newman, D Lin. \textit{"A New Facial Authentication Pitfall and Remedy in Web Services".} IEEE Transactions on Dependable and Secure Computing, vol. 19, no. 4, pp. 2635-2647, 1 July-Aug. 2022 \\ \\
 \end{tabular}
 
+% ---- Computer skills ----
 
 \begin{tabular}{p{1.5cm} l l l l l l l l}
-Computer	& Advanced: 	& Python 	& C++    	& Rust			& 			& 			& 				&           \\
-Skills		& Proficient:	& Java      & JavaScript& HTML      & Linux      & \LaTeX    & SQL          & Django     \\
-            &			 	& PyTorch   & Tensorflow& Keras     & Docker     & Matplotlib& Numpy     & Sklearn       &       \\
+Computer & Advanced:   & Python  & C++        & Rust \\
+Skills   & Proficient: & Java    & JavaScript & HTML  & Linux  & \LaTeX     & SQL   & Django  \\
+         &             & PyTorch & Tensorflow & Keras & Docker & Matplotlib & Numpy & Sklearn \\
+\\
 \\
 \end{tabular}
 
